@@ -1,0 +1,1135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+*{
+    margin:0%;
+    padding: 0%;
+    /* background-color: aqua; */
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+}
+.ek{
+    display: flex;
+    background-color: #C6AC8F;
+    justify-content: space-around;
+    /* padding: 2%; */
+    /* height: 20vh; */
+    align-items: center;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 2;
+
+}
+.container{
+    display: flex;
+    background-color: #C6AC8F;
+    justify-content: space-around;
+    /* padding: 2%; */
+    /* height: 20vh; */
+    align-items: center;
+    width: 32%;
+}
+.dba{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.dba a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo img{
+    width:25%;
+}
+.cart{
+    display: flex;
+    width: 3%;
+}
+.cart img{
+    width: 81%;
+    width: 164%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.fade img{
+  width: 100%;
+    height: 80vh;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.idea{
+  background-color: #EAE0D5;
+}
+.main{
+  background-color: #EAE0D5;
+  text-align: center;
+  padding: 3%;
+  font-family: 'Oswald', sans-serif;
+  color:#5E503F;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #EAE0D5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#C6AC8F),
+    to(#5E503F)
+  );
+  background: linear-gradient(to right, #C6AC8F, #5E503F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 4px 16px;
+}
+
+#cards-contain {
+  overflow: hidden;
+  margin: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99999px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 405px;
+  margin: 15px 7.5px;
+  /* color: black;
+  text-decoration: none; */
+}
+.card a{
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card .img {
+  max-width: 220px;
+  height: 220px;
+  display: inline-block;
+}
+
+#slide-left-contain,
+#slide-right-contain {
+  display: none;
+}
+
+#slide-left-contain.active,
+#slide-right-contain.active {
+  display: block;
+  cursor: pointer;
+}
+
+.slide-left,
+.slide-right {
+  border-color: #fff;
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.slide-left {
+  border-width: 4px 0 0 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: 40%;
+}
+
+.slide-right {
+  border-width: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 22%;
+}
+
+.any{
+  width:100%;
+  /* height: 100vh; */
+  /* border: 2px solid black; */
+}
+.any::before{
+  
+  content: '';
+  /* background: url(/Img/Pink\ Gray\ Winter\ Landscape\ Motivation\ Desktop\ Wallpaper\ .png); */
+  background: url(/Img/ie.webp);
+  position:absolute;
+  /* top:0px;
+  left:0px; */
+  /* bottom: 0px; */
+  width:100%;
+  height: 1500px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+.is{
+  display: flex;
+  z-index: 2;
+  /* height: 630px; */
+}
+.are{
+  z-index: 2;
+  display: flex;
+}
+.one{
+  width: 50%;
+}
+.one video{
+  width: 100%;
+  height: 469px;
+}
+.two{
+  /* display: flex;
+  align-items: center; */
+  display: flex;
+  align-items: center;
+  background-color: #baafa3;
+  height: 470px;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2;
+  width: 103%;
+  padding: 2%;
+}
+.tw{
+  width: 50%;
+}
+.tw video{
+  width: 100%;
+  
+}
+.on{
+  display: flex;
+    align-items: center;
+    background-color: #9d8b78;
+    height: 604px;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2;
+    width: 70%;
+    padding: 2%;
+}
+.on p{
+  text-align: center;
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+} */
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+/* .context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+} */
+
+
+/* .area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+} */
+   
+ 
+.is{
+  background: #C6AC8F;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#5E503F),
+    to(#EAE0D5)
+  );
+  background: linear-gradient(to right, #5E503F, #EAE0D5);
+  padding: 2%;
+}
+.are{
+  background: #C6AC8F;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#5E503F),
+    to(#EAE0D5)
+  );
+  background: linear-gradient(to right, #5E503F, #EAE0D5);
+  padding: 2%;
+}
+.circles{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.sumit{
+  text-align: center;
+  padding: 2% 0%;
+  color: white;
+}
+.some{
+  /* height: 50vh; */
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 72px 0px;
+    color: white;
+}
+
+*{
+	/* removing any padding that might become problematic */
+	margin: 0;
+	padding: 0;
+	}
+	
+	isha{
+	margin: 30px 15%;
+	background: #ccc;
+	font-family: tahoma, arial, verdana; 
+	}
+	
+	.main1 li{
+	/* forgot to put '.main' - 40 min debug :) */
+	position: relative;
+	display: block;
+	width: 160px;
+	float:left;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+  }
+	
+	.main1 ul{
+	width:2000px;
+	}
+	
+	/* border-left: 1px solid rgba(0,0,0,0.65);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.45);
+	-webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,0.45);
+	} */
+	
+	.slidetitle{
+	/* initializing squares */
+	background: rgba(0,0,0,.65);
+	
+	/* position on bottom */
+	position: absolute;
+	left:0;
+	bottom:0;
+	width: 640px;
+	}
+	
+	.slidetitle span{
+	/* titles follow here
+	some values have to be exact */
+	display: block;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	}
+	
+	
+	
+	.main1{
+	/* some calculus */
+	margin: 50px;
+	width: 92%;
+	height: 320px;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px 3px #888888;
+	-moz-box-shadow: 0px 0px 10px 3px #888888;
+	-webkit-box-shadow: 0px 0px 10px 3px #888888;
+	}
+	
+	.main1 li img{
+	display:block;
+  width: 320px;
+	}
+	
+	/* when u hover over the entire list, the default value is set to 40 */
+	.main1 ul:hover li{
+	width:40px;
+	}
+	
+	/* however, when you hover on a particular element from that list, the value is overriden. that's why the above comes first ^ */
+	.main1 ul li:hover{
+	width:640px;
+	}
+
+  .main1::before{
+   
+    /* background-color: #EAE0D5; */
+    content: '';
+    background: url(/Img/ss.jpg);
+    /* background: url(image file); */
+    position:absolute;
+    opacity: 0.7;
+    z-index: -1;
+    width: 92%;
+	height: 320px;
+    /* top:0px;
+    left:0px; */
+  }
+
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+  .abt{
+    background: linear-gradient(-45deg, #A6B4B3, #E5CBC1, #E3E4E0, #83AF9B);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    /* height: 100vh; */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 10% 3%;
+    line-height: 2;
+    color: #5E503F;
+    
+  }
+  .abt h1{
+    font-size: xxx-large;
+    color: #5E503F;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.happy{
+    width: 100%;
+    height: 100vh;
+  }
+  .robin{
+    width: 50%;
+    border: 2px solid black;
+    height: 50vh;
+  }
+  .enough{
+    width: 50%;
+    border: 2px solid black;
+    height: 50vh;
+  }
+
+  :root {
+    /* COLORS */
+    --white: #e9e9e9;
+    --gray: #333;
+    --blue: #0367a6;
+    --lightblue: #008997;
+  
+    /* RADII */
+    --button-radius: 0.7rem;
+  
+    /* SIZES */
+    --max-width: 758px;
+    --max-height: 420px;
+  
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .happy{
+    align-items: center;
+    background-color: var(--white);
+    /* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg"); */
+    /* background: url(/Img/Pink\ Gray\ Winter\ Landscape\ Motivation\ Desktop\ Wallpaper\ .png); */
+    background: url(/Img/anna-oliinyk-nCPpMv69m1s-unsplash.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
+  
+  .form__title {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1.25rem;
+  }
+  
+  .link {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    text-decoration: none;
+  }
+  
+  .con {
+    background-color: var(--white);
+    border-radius: var(--button-radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+      0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    height: var(--max-height);
+    max-width: var(--max-width);
+    overflow: hidden;
+    /* position: relative; */
+    position: sticky;
+    width: 100%;
+  }
+  
+  .container__form {
+    height: 100%;
+    position: absolute;
+    /* z-index: -1; */
+    top: 0;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .container--signin {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .container.right-panel-active .container--signin {
+    transform: translateX(100%);
+  }
+  
+  .container--signup {
+    left: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;
+  }
+  
+  .container.right-panel-active .container--signup {
+    animation: show 0.6s;
+    opacity: 1;
+    transform: translateX(100%);
+    z-index: 5;
+  }
+  
+  .container__overlay {
+    height: 100%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: transform 0.6s ease-in-out;
+    width: 50%;
+    z-index: 100;
+  }
+  
+  .container.right-panel-active .container__overlay {
+    transform: translateX(-100%);
+  }
+  
+  .overlay {
+    background-color: var(--lightblue);
+    /* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg"); */
+    /* background: url(/Img/Pink\ Gray\ Winter\ Landscape\ Motivation\ Desktop\ Wallpaper\ .png); */
+    background: url(/Img/anna-oliinyk-nCPpMv69m1s-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: -100%;
+    position: relative;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    width: 200%;
+  }
+  
+  .container.right-panel-active .overlay {
+    transform: translateX(50%);
+  }
+  
+  .overlay__panel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    width: 50%;
+  }
+  
+  .overlay--left {
+    transform: translateX(-20%);
+  }
+  
+  .container.right-panel-active .overlay--left {
+    transform: translateX(0);
+  }
+  
+  .overlay--right {
+    right: 0;
+    transform: translateX(0);
+  }
+  
+  .container.right-panel-active .overlay--right {
+    transform: translateX(20%);
+  }
+  
+  .btn {
+    background-color: var(--blue);
+    background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%);
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 4rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+  
+  .form > .btn {
+    margin-top: 1.5rem;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .form {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .input {
+    background-color: #fff;
+    border: none;
+    padding: 0.9rem 0.9rem;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  
+  @keyframes show {
+    0%,
+    49.99% {
+      opacity: 0;
+      z-index: 1;
+    }
+  
+    50%,
+    100% {
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+
+  .up{
+    padding: 4% 0%;
+    text-align: center;
+  }
+  .random{
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    /* background-color: #C6AC8F; */
+  }
+
+  .up {
+    color: #1a1a1a;
+    font-family: "Poppins", sans-serif;
+    background: #CBD2D8;
+  
+    background: linear-gradient(
+      to right,
+      #A2967F 0%,
+      #C39E9E 50%,
+      #CB997E 100%
+    );
+  
+    background: -moz-linear-gradient(
+      to right,
+      #A2967F 0%,
+      #C39E9E  50%,
+      #CB997E 100%
+    );
+  
+    background: -webkit-linear-gradient(
+      to right,
+      #A2967F 0%,
+      #C39E9E  50%,
+      #CB997E 100%
+    );
+  }
+.bt{
+  border-radius: 32px;
+    width: 6%;
+    height: 35px;
+    /* border: none; */
+    background-color: #C39E9E;
+    cursor: pointer;
+}
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.footer{
+  height: 250px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cp{
+  color: white;
+}
+ .end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+ } 
+
+
+ .phone {
+  <!-- src: https://subtlepatterns.com/?p=1045 -->
+  background: url('dark_geometric.png');
+ }
+  
+ #tainer {
+  width: 100%;
+  overflow: hidden;
+  /* margin: 30px auto; */
+  background: transparent;
+ }
+ /*header*/
+ header {
+   /* width: 800px; */
+   margin: 40px auto;
+ }
+ 
+ header h2 {
+   text-align: center;
+   font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+   font-size: xx-large;
+    color: white;
+   
+ }
+ 
+ header p {
+   font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+   text-align: justify;
+ }
+ 
+ /*photobanner*/
+ 
+ .photobanner {
+   height: 300px;
+   width: 8640px;
+   margin-bottom: 80px;
+ }
+ /*keyframe animations*/
+ .fir {
+   -webkit-animation: bannermove 50s linear infinite;
+      -moz-animation: bannermove 50s linear infinite;
+       -ms-animation: bannermove 50s linear infinite;
+        -o-animation: bannermove 50s linear infinite;
+           animation: bannermove 50s linear infinite;
+ }
+ 
+ @keyframes "bannermove" {
+  0% {
+     margin-left: 0px;
+  }
+  100% {
+     margin-left: -5746px;
+  }
+ 
+ }
+ 
+ @-moz-keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5746px;
+  }
+ 
+ }
+ 
+ @-webkit-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5746px;
+  }
+ 
+ }
+ 
+ @-ms-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5746px;
+  }
+ 
+ }
+ 
+ @-o-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5746px;
+  }
+ 
+ }
+ /* .photobanner {
+   height: 242px;
+   width: 8640px;
+   margin-bottom: 80px;
+ } */
+ 
+ .photobanner img {
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   transition: all 1s ease;
+   width: 4%;
+ }
+ 
+ .photobanner img:hover {
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+   cursor: pointer;
+ 
+   -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+   -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+   box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ }
+ .phone{
+  background-color: #b68f7a;
+ }
+
+ .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #baafa3 0%,
+    #CB997E 29%,
+    #C39E9E 67%,
+    #A2967F 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.idea{
+  padding-bottom: 2%;
+}
+.fa{
+  font-size: 70px;
+}

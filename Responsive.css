@@ -1,0 +1,111 @@
+.ek{
+    font-size: 12px;
+}
+.fade img{
+    height: auto;
+}
+.cart img{
+    width: 350%;
+}
+.animate-charcter{
+    font-size: 20px;
+}
+.card{
+    width: 283px;
+
+}
+.row{
+    padding-top: 3%;
+}
+.sumit{
+    font-size: 17px;
+
+}
+.is{
+    flex-direction: column;
+
+}
+.on{
+    height: 435px;
+    width: 100%;
+
+
+}
+.tw{
+    width: 100%;
+}
+.are{
+    flex-direction: column;
+
+}
+.one{
+    width: 100%;
+}
+.two{
+    margin-top: -11%;
+    width: 100%;
+    height: 343px;
+}
+.any::before{
+    height: 1895px;
+}
+.some{
+    font-size: 10px;
+    padding: 72px 15px;
+
+}
+.phone{
+    
+
+    height: 467px;
+}
+header h2{
+    font-size: 20px;
+
+}
+.photobanner img{
+   width: 3%;
+
+}
+.con{
+    height: 232px;
+    width: 91%;
+}
+.input{
+    padding: 0%;
+}
+.btn{
+    padding: 0%;
+    font-weight: none;
+    width: 100px;
+    height: 23px;
+}
+.bt{
+    width: 21%;
+}
+.footer{
+    flex-direction: column;
+    height: 197px
+}
+.end{
+    height: 423px;
+}
+.fa{
+    font-size: 19px;
+    font-size: 19px;
+}
+.cp{
+    flex-direction: column;
+    /* height: 197px; */
+    margin-top: 17%;
+}
+.form > .btn {
+    /* margin-top: 1.5rem; */
+    margin-top: 0px;
+}
+.happy{
+    height: 366px;
+}
+.logo img {
+    width: 50%;
+}
